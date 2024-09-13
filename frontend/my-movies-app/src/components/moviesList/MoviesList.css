@@ -1,0 +1,99 @@
+/* MoviesList.css */
+
+/* Container for the entire movie list */
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  /* Styling for each movie card */
+  .movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 750px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  /* Fade-in animation for each movie card */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover effect for movie card */
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the poster image container */
+  .movie-poster-container {
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  /* Styling for the poster image */
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Poster hover effect */
+  .movie-poster-container:hover .movie-poster {
+    transform: scale(1.1);
+  }
+  
+  /* Styling for the movie details section */
+  .movie-details {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    display: block;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Title and year styling */
+  .movie-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the toggle button */
+  .toggle-details-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the toggle button */
+  .toggle-details-btn:hover {
+    background-color: #0056b3;
+  }
+  
