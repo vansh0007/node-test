@@ -20,7 +20,7 @@ export const fetchMovies = async (
     ...Object.fromEntries(Object.entries(filters).filter(([_, v]) => v != null))
   });
 
-  const endpoint = Object.keys(filters).find(key => filters[key as keyof MovieFilters]) || '';
+  const endpoint = Object.keys(filters).find(key => filters[key as keyof MovieFilters]) ?? '';
 
   try {
     const response = await fetch(`${BASE_URL}/${endpoint}?${queryParams.toString()}`);

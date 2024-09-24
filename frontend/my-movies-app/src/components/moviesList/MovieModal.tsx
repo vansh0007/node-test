@@ -14,12 +14,15 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
         <button className="close-btn" onClick={onClose}>
           &times;
         </button>
+        <div>
         <h2>{movie.title} ({movie.year})</h2>
         <img 
           src={movie.poster || 'https://via.placeholder.com/200x300?text=No+Poster'}
           alt={`${movie.title} Poster`} 
           style={{ width: '200px', height: '300px' }} 
         />
+        </div>
+        <div>
         <p><strong>Plot:</strong> {movie.plot}</p>
         <p><strong>Full Plot:</strong> {movie.fullplot}</p>
         <p><strong>Released:</strong> {new Date(movie.released).toLocaleDateString()}</p>
@@ -33,6 +36,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
         <p><strong>Comments:</strong> {movie.num_mflix_comments}</p>
         <p><strong>Movie Type:</strong> {movie.type}</p>
         <p><strong>Last Updated:</strong> {new Date(movie.lastupdated).toLocaleString()}</p>
+        </div>
       </div>
     </div>
   );
