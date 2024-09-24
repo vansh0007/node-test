@@ -1,3 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.title {
+  text-align: center;
+}
+
+
 .load-more-container {
   display: flex;
   justify-content: center;
@@ -5,8 +20,8 @@
 }
 
 .load-more-btn {
-  background-color: #007bff;
-  color: #fff;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
@@ -17,7 +32,7 @@
 }
 
 .load-more-btn:hover {
-  background-color: #0056b3;
+  background-color: darkgray;
   transform: scale(1.05);
 }
 
@@ -28,5 +43,5 @@
 
 .loading-spinner {
   font-size: 16px;
-  color: #007bff;
+  color: white;
 }

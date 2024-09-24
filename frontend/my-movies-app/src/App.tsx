@@ -70,7 +70,10 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Movie List</h1>
+      <div className='header'>
+      <img width={100} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="IMDB Logo" className="imdb-logo" />
+      <h1 className="title">Movie List</h1>
+      </div>
       <Search onSearch={handleSearch} />
       <MovieList movies={movies} />
       <div className="load-more-container">
