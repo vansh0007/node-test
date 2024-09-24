@@ -4,9 +4,9 @@
 .movies-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: black;
   }
   
   /* Styling for each movie card */
@@ -81,8 +81,8 @@
   
   /* Styling for the toggle button */
   .toggle-details-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: black;
+    color: black;
     border: none;
     padding: 10px;
     font-size: 14px;
@@ -94,6 +94,6 @@
   
   /* Hover effect for the toggle button */
   .toggle-details-btn:hover {
-    background-color: #0056b3;
+    background-color: white;
   }
   
