@@ -38,9 +38,9 @@ const MoviesList: React.FC<{ movies: Movie[] }> = ({ movies }) => {
         </div>
       ))}
 
-      {/* {selectedMovie && (
+      {selectedMovie && (
         <MovieModal movie={selectedMovie} onClose={closeModal} />
-      )} */}
+      )}
     </div>
   );
 };
